@@ -12,17 +12,17 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#home" class="logo" aria-label="Ali Hassan home">Ali Hassan</a>
+      <a href="#home" class="logo" aria-label="Ali Hassan home">ALI&nbsp;HASSAN</a>
       <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">&#9776;</button>
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Stats</a></li>
+          <li><a href="#projects">Quests</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">&#127769; Dark</button>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to light mode">Light</button>
     </div>
   </header>
 
@@ -30,40 +30,58 @@
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <p class="eyebrow">Hello, I'm</p>
+          <p class="eyebrow">[ Hunter Profile ]</p>
           <h1>Ali Hassan</h1>
-          <p class="lead">Aspiring web developer building clean, accessible and responsive websites with HTML, CSS and JavaScript.</p>
-          <a class="btn" href="#projects">View my work</a>
-          <a class="btn btn-outline" href="#contact">Get in touch</a>
+          <p class="rank">Web Developer &bull; Level 1 &bull; Leveling up every day</p>
+          <p class="lead">I build clean, accessible and responsive websites with HTML, CSS and JavaScript, and I never stop training.</p>
+          <a class="btn" href="#projects">View my quests</a>
+          <a class="btn btn-outline" href="#contact">Join my party</a>
         </div>
-        <img class="hero-img"
-             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' rx='150' fill='rgb(79,70,229)'/%3E%3Ccircle cx='150' cy='115' r='52' fill='white'/%3E%3Cpath d='M50 260c10-60 55-90 100-90s90 30 100 90z' fill='white'/%3E%3C/svg%3E"
-             alt="Illustrated profile avatar of Ali Hassan" width="220" height="220">
+        <div class="hero-art">
+          <img class="hero-img"
+               src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Cdefs%3E%3CradialGradient id='g' cx='50%25' cy='45%25' r='55%25'%3E%3Cstop offset='0' stop-color='rgb(139,92,246)' stop-opacity='0.85'/%3E%3Cstop offset='1' stop-color='rgb(139,92,246)' stop-opacity='0'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='rgb(221,214,254)'/%3E%3Cstop offset='1' stop-color='rgb(99,102,241)'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='500' fill='rgb(8,6,20)'/%3E%3Ccircle cx='200' cy='230' r='200' fill='url(%23g)'/%3E%3Cg fill='rgb(196,181,253)'%3E%3Ccircle cx='60' cy='120' r='3'/%3E%3Ccircle cx='340' cy='90' r='2'/%3E%3Ccircle cx='350' cy='260' r='3'/%3E%3Ccircle cx='45' cy='300' r='2'/%3E%3Ccircle cx='300' cy='400' r='2'/%3E%3Ccircle cx='110' cy='60' r='2'/%3E%3C/g%3E%3Cpath d='M200 110C150 110 128 165 134 215C98 262 80 380 66 500L334 500C320 380 302 262 266 215C272 165 250 110 200 110Z' fill='rgb(12,10,28)' stroke='rgb(124,58,237)' stroke-width='3'/%3E%3Cpath d='M200 125C168 125 156 160 160 195C164 225 182 240 200 240C218 240 236 225 240 195C244 160 232 125 200 125Z' fill='rgb(2,2,8)'/%3E%3Cellipse cx='185' cy='185' rx='9' ry='4' fill='rgb(196,181,253)'/%3E%3Cellipse cx='215' cy='185' rx='9' ry='4' fill='rgb(196,181,253)'/%3E%3Cpath d='M130 230C110 300 120 360 150 500' fill='none' stroke='rgb(76,29,149)' stroke-width='4'/%3E%3Cpath d='M270 230C290 300 280 360 250 500' fill='none' stroke='rgb(76,29,149)' stroke-width='4'/%3E%3Cpolygon points='318,330 328,325 372,120 360,128' fill='url(%23b)'/%3E%3Crect x='306' y='322' width='30' height='8' rx='3' fill='rgb(49,46,129)' transform='rotate(-12 321 326)'/%3E%3C/svg%3E"
+               alt="Original illustration of a hooded shadow hunter with glowing eyes holding a glowing blade, surrounded by purple light"
+               width="320" height="400">
+        </div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container">
         <h2>About Me</h2>
-        <p>I'm a student developer passionate about turning ideas into usable websites. I enjoy learning new tools, writing readable code and making sure the web is accessible to everyone. This portfolio was built and improved step by step using AI-assisted coding, testing and debugging.</p>
+        <div class="panel">
+          <p>I'm a student developer who loves turning ideas into usable websites. I enjoy learning new tools, writing readable code and making sure the web is accessible to everyone. This portfolio was built and improved step by step using AI-assisted coding, testing and debugging.</p>
+        </div>
       </div>
     </section>
 
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
-        <ul class="skills-grid">
-          <li><strong>HTML5</strong><span>Semantic structure and accessibility</span></li>
-          <li><strong>CSS3</strong><span>Flexbox, Grid and responsive design</span></li>
-          <li><strong>JavaScript</strong><span>DOM manipulation and interactivity</span></li>
-          <li><strong>Git &amp; GitHub</strong><span>Version control and GitHub Pages</span></li>
+        <h2>Status Window</h2>
+        <ul class="stats panel">
+          <li class="stat">
+            <div class="stat-head"><span>HTML5</span><span>90%</span></div>
+            <div class="bar" role="progressbar" aria-label="HTML5 skill level" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span style="--level:90%"></span></div>
+          </li>
+          <li class="stat">
+            <div class="stat-head"><span>CSS3 &amp; Responsive Design</span><span>85%</span></div>
+            <div class="bar" role="progressbar" aria-label="CSS3 skill level" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span style="--level:85%"></span></div>
+          </li>
+          <li class="stat">
+            <div class="stat-head"><span>JavaScript</span><span>75%</span></div>
+            <div class="bar" role="progressbar" aria-label="JavaScript skill level" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span style="--level:75%"></span></div>
+          </li>
+          <li class="stat">
+            <div class="stat-head"><span>Git &amp; GitHub</span><span>70%</span></div>
+            <div class="bar" role="progressbar" aria-label="Git and GitHub skill level" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span style="--level:70%"></span></div>
+          </li>
         </ul>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
+        <h2>Quests Completed</h2>
         <div class="filters" role="group" aria-label="Filter projects">
           <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
           <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
@@ -72,27 +90,30 @@
 
         <div class="cards">
           <article class="card" data-category="web">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(224,231,255)'/%3E%3Crect x='40' y='40' width='320' height='24' rx='6' fill='rgb(79,70,229)'/%3E%3Crect x='40' y='84' width='200' height='16' rx='6' fill='rgb(129,140,248)'/%3E%3Crect x='40' y='116' width='320' height='64' rx='6' fill='white'/%3E%3C/svg%3E"
-                 alt="Wireframe illustration of a personal landing page layout" loading="lazy" width="400" height="220">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(20,14,50)'/%3E%3Crect x='40' y='40' width='320' height='24' rx='6' fill='rgb(124,58,237)'/%3E%3Crect x='40' y='84' width='200' height='16' rx='6' fill='rgb(167,139,250)'/%3E%3Crect x='40' y='116' width='320' height='64' rx='6' fill='rgb(40,30,90)'/%3E%3C/svg%3E"
+                 alt="Wireframe illustration of a personal landing page layout in purple tones" loading="lazy" width="400" height="220">
             <div class="card-body">
+              <span class="tag">Rank B</span>
               <h3>Personal Landing Page</h3>
               <p>A responsive one-page site created with semantic HTML and modern CSS.</p>
             </div>
           </article>
 
           <article class="card" data-category="js">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(254,243,199)'/%3E%3Crect x='110' y='30' width='180' height='160' rx='12' fill='rgb(30,41,59)'/%3E%3Crect x='125' y='45' width='150' height='32' rx='6' fill='rgb(148,163,184)'/%3E%3Ccircle cx='150' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3Ccircle cx='200' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3Ccircle cx='250' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3C/svg%3E"
-                 alt="Illustration of a calculator interface with a display and buttons" loading="lazy" width="400" height="220">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(20,14,50)'/%3E%3Crect x='110' y='30' width='180' height='160' rx='12' fill='rgb(10,8,28)' stroke='rgb(124,58,237)' stroke-width='3'/%3E%3Crect x='125' y='45' width='150' height='32' rx='6' fill='rgb(76,29,149)'/%3E%3Ccircle cx='150' cy='110' r='14' fill='rgb(167,139,250)'/%3E%3Ccircle cx='200' cy='110' r='14' fill='rgb(167,139,250)'/%3E%3Ccircle cx='250' cy='110' r='14' fill='rgb(167,139,250)'/%3E%3Ccircle cx='150' cy='155' r='14' fill='rgb(167,139,250)'/%3E%3Ccircle cx='200' cy='155' r='14' fill='rgb(167,139,250)'/%3E%3Ccircle cx='250' cy='155' r='14' fill='rgb(167,139,250)'/%3E%3C/svg%3E"
+                 alt="Illustration of a calculator interface with a display and glowing buttons" loading="lazy" width="400" height="220">
             <div class="card-body">
+              <span class="tag">Rank A</span>
               <h3>JavaScript Calculator</h3>
               <p>An interactive calculator that handles basic arithmetic using DOM events.</p>
             </div>
           </article>
 
           <article class="card" data-category="js">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(209,250,229)'/%3E%3Crect x='60' y='36' width='280' height='36' rx='8' fill='white'/%3E%3Crect x='60' y='84' width='280' height='36' rx='8' fill='white'/%3E%3Crect x='60' y='132' width='280' height='36' rx='8' fill='white'/%3E%3Ccircle cx='82' cy='54' r='8' fill='rgb(16,185,129)'/%3E%3Ccircle cx='82' cy='102' r='8' fill='rgb(16,185,129)'/%3E%3Ccircle cx='82' cy='150' r='8' fill='rgb(209,213,219)'/%3E%3C/svg%3E"
-                 alt="Illustration of a to-do list with checked and unchecked items" loading="lazy" width="400" height="220">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(20,14,50)'/%3E%3Crect x='60' y='36' width='280' height='36' rx='8' fill='rgb(40,30,90)'/%3E%3Crect x='60' y='84' width='280' height='36' rx='8' fill='rgb(40,30,90)'/%3E%3Crect x='60' y='132' width='280' height='36' rx='8' fill='rgb(40,30,90)'/%3E%3Ccircle cx='82' cy='54' r='8' fill='rgb(167,139,250)'/%3E%3Ccircle cx='82' cy='102' r='8' fill='rgb(167,139,250)'/%3E%3Ccircle cx='82' cy='150' r='8' fill='rgb(90,80,140)'/%3E%3C/svg%3E"
+                 alt="Illustration of a quest list with completed and pending items" loading="lazy" width="400" height="220">
             <div class="card-body">
+              <span class="tag">Rank B</span>
               <h3>To-Do List App</h3>
               <p>Add, complete and remove tasks with JavaScript and local storage.</p>
             </div>
@@ -104,7 +125,7 @@
     <section id="contact" class="section alt">
       <div class="container narrow">
         <h2>Contact</h2>
-        <form id="contact-form" novalidate>
+        <form id="contact-form" class="panel" novalidate>
           <div class="field">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required autocomplete="name" aria-describedby="name-error">
