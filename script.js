@@ -17,26 +17,43 @@ siteNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ---------- Dark / light theme toggle ----------
+// ---------- Dark / light theme toggle (dark is the default) ----------
 const themeToggle = document.getElementById('theme-toggle');
 
 function applyTheme(theme) {
-  const isDark = theme === 'dark';
+  const isLight = theme === 'light';
   document.documentElement.setAttribute('data-theme', theme);
-  themeToggle.setAttribute('aria-pressed', String(isDark));
-  themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-  themeToggle.innerHTML = isDark ? '&#9728;&#65039; Light' : '&#127769; Dark';
+  themeToggle.setAttribute('aria-pressed', String(isLight));
+  themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+  themeToggle.textContent = isLight ? 'Dark' : 'Light';
 }
 
-let savedTheme = 'light';
-try { savedTheme = localStorage.getItem('theme') || 'light'; } catch (e) { /* storage unavailable */ }
+let savedTheme = 'dark';
+try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) { /* storage unavailable */ }
 applyTheme(savedTheme);
 
 themeToggle.addEventListener('click', () => {
-  const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
   applyTheme(next);
   try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
 });
+
+// ---------- Animated skill bars (fill when scrolled into view) ----------
+const stats = document.querySelectorAll('.stat');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  stats.forEach(stat => observer.observe(stat));
+} else {
+  stats.forEach(stat => stat.classList.add('in-view'));
+}
 
 // ---------- Project filter ----------
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -94,7 +111,7 @@ form.addEventListener('submit', event => {
   const allValid = fields.map(validateField).every(Boolean);
 
   if (allValid) {
-    status.textContent = 'Thanks! Your message has been sent (demo).';
+    status.textContent = 'Message sent! (demo)';
     form.reset();
   } else {
     fields.find(f => f.getAttribute('aria-invalid') === 'true').focus();
