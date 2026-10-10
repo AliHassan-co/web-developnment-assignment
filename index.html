@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ali Hassan - web developer. Projects, skills and contact information.">
+  <title>Ali Hassan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo" aria-label="Ali Hassan home">Ali Hassan</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">&#9776;</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">&#127769; Dark</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Ali Hassan</h1>
+          <p class="lead">Aspiring web developer building clean, accessible and responsive websites with HTML, CSS and JavaScript.</p>
+          <a class="btn" href="#projects">View my work</a>
+          <a class="btn btn-outline" href="#contact">Get in touch</a>
+        </div>
+        <img class="hero-img"
+             src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' rx='150' fill='rgb(79,70,229)'/%3E%3Ccircle cx='150' cy='115' r='52' fill='white'/%3E%3Cpath d='M50 260c10-60 55-90 100-90s90 30 100 90z' fill='white'/%3E%3C/svg%3E"
+             alt="Illustrated profile avatar of Ali Hassan" width="220" height="220">
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a student developer passionate about turning ideas into usable websites. I enjoy learning new tools, writing readable code and making sure the web is accessible to everyone. This portfolio was built and improved step by step using AI-assisted coding, testing and debugging.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul class="skills-grid">
+          <li><strong>HTML5</strong><span>Semantic structure and accessibility</span></li>
+          <li><strong>CSS3</strong><span>Flexbox, Grid and responsive design</span></li>
+          <li><strong>JavaScript</strong><span>DOM manipulation and interactivity</span></li>
+          <li><strong>Git &amp; GitHub</strong><span>Version control and GitHub Pages</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+          <button class="filter-btn" data-filter="js" aria-pressed="false">JavaScript</button>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-category="web">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(224,231,255)'/%3E%3Crect x='40' y='40' width='320' height='24' rx='6' fill='rgb(79,70,229)'/%3E%3Crect x='40' y='84' width='200' height='16' rx='6' fill='rgb(129,140,248)'/%3E%3Crect x='40' y='116' width='320' height='64' rx='6' fill='white'/%3E%3C/svg%3E"
+                 alt="Wireframe illustration of a personal landing page layout" loading="lazy" width="400" height="220">
+            <div class="card-body">
+              <h3>Personal Landing Page</h3>
+              <p>A responsive one-page site created with semantic HTML and modern CSS.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="js">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(254,243,199)'/%3E%3Crect x='110' y='30' width='180' height='160' rx='12' fill='rgb(30,41,59)'/%3E%3Crect x='125' y='45' width='150' height='32' rx='6' fill='rgb(148,163,184)'/%3E%3Ccircle cx='150' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3Ccircle cx='200' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3Ccircle cx='250' cy='110' r='14' fill='rgb(251,191,36)'/%3E%3C/svg%3E"
+                 alt="Illustration of a calculator interface with a display and buttons" loading="lazy" width="400" height="220">
+            <div class="card-body">
+              <h3>JavaScript Calculator</h3>
+              <p>An interactive calculator that handles basic arithmetic using DOM events.</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="js">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 220'%3E%3Crect width='400' height='220' fill='rgb(209,250,229)'/%3E%3Crect x='60' y='36' width='280' height='36' rx='8' fill='white'/%3E%3Crect x='60' y='84' width='280' height='36' rx='8' fill='white'/%3E%3Crect x='60' y='132' width='280' height='36' rx='8' fill='white'/%3E%3Ccircle cx='82' cy='54' r='8' fill='rgb(16,185,129)'/%3E%3Ccircle cx='82' cy='102' r='8' fill='rgb(16,185,129)'/%3E%3Ccircle cx='82' cy='150' r='8' fill='rgb(209,213,219)'/%3E%3C/svg%3E"
+                 alt="Illustration of a to-do list with checked and unchecked items" loading="lazy" width="400" height="220">
+            <div class="card-body">
+              <h3>To-Do List App</h3>
+              <p>Add, complete and remove tasks with JavaScript and local storage.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container narrow">
+        <h2>Contact</h2>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" aria-describedby="name-error">
+            <span class="error" id="name-error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" aria-describedby="email-error">
+            <span class="error" id="email-error" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <span class="error" id="message-error" role="alert"></span>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Ali Hassan. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
