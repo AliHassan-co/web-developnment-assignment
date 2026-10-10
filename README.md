@@ -10,3 +10,4 @@ A responsive, accessible portfolio built with HTML, CSS and JavaScript.
 
 ## Run locally
 Open `index.html` in a browser.
+changing theme
